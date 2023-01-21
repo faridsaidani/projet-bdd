@@ -1,34 +1,26 @@
 import { useRef } from "react";
-import { FaBars, FaTimes, FaSearch } from "react-icons/fa";
+import { FaBars, FaTimes, FaSearch, FaShoppingCart } from "react-icons/fa";
 import "./NavBar.css";
+import logo from "../../logo.png"
 
 function Navbar() {
 	const navRef = useRef();
-
-	const showNavbar = () => {
-		navRef.current.classList.toggle("responsive_nav");
-	};
+	const handleSearchClick = () =>{
+		console.log("search function");
+	}
 
 	return (
 		<header>
-			<h3>LOGO</h3>
+			<a href="#"><img src={logo} alt="logo" /></a>
             <div className="searchBox">
-            <a href="#"><FaSearch /></a>
+            <a onClick={handleSearchClick} href="#"><FaSearch /></a>
                 <input type="search" placeholder="Search essentials, furniture and more..."/> 
                 <a href="#"><FaBars /></a>
                
             </div>
 			<nav ref={navRef}>
-				<a href="/#">About me</a>
-				<button
-					className="nav-btn nav-close-btn"
-					onClick={showNavbar}>
-					<FaTimes />
-				</button>
+				<a href="/#"><FaShoppingCart className="cart" />Cart</a>
 			</nav>
-			<button className="nav-btn" onClick={showNavbar}>
-				<FaBars />
-			</button>
 		</header>
 	);
 }
