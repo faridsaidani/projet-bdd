@@ -5,6 +5,7 @@ import NavBar from './NavBar/NavBar'
 import SubNavBar from './SubNavBar/SubNavBar'
 import ProductInfo from './ProductInfo/ProductInfo';
 import CartPage from './CartPage/CartPage'
+import Sliderr from './Sliderr/Sliderr'
 
 const App = () =>{
 
@@ -13,7 +14,8 @@ const App = () =>{
       <NavBar />
       <SubNavBar/>
       {/* <ProductInfo /> */}
-      <CartPage />
+      {/* <CartPage /> */}
+      <Sliderr />
     </div>
   )
 }

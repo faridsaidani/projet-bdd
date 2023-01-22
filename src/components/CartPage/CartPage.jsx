@@ -34,7 +34,8 @@ const CartPage = () =>{
                      </div>
                 </div>
                 <div className="checkOut">
-                    <p>test</p>
+                    <h3>Checkout section</h3>
+                    <button onClick={() => console.log("checkout")} className="checkoutBtn">CHECKOUT</button>
                 </div>
             </div>
         </div>
