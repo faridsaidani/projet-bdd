@@ -1,0 +1,47 @@
+.container{
+    max-width: 1200px;
+    height: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 650px 450px;
+    justify-content: space-between;
+    margin: 20px auto;
+    grid-gap: 30px;
+    border-radius: 15px;
+    
+}
+
+.shoppingCart{
+    height: auto;
+    width: 600px;
+    margin: 0px 30px 0px 0px;
+    border-radius: 10px;
+}
+
+.checkOut{
+    background-color: blue;
+    height: auto;
+    width: 400px;
+    margin: 3px;
+    border-radius: 10px;
+    margin: 0px 30px 0px 30px;
+
+}
+
+.goBack{
+    border-bottom: 3px solid #D0CFCF;
+    margin: 30px 30px 10px 10px;
+}
+.arrowBack{
+    vertical-align: middle;
+}
+.continueShopping{
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.itemCount{
+    font-size: 0.7rem;
+}
+.titleHeader{
+    margin-left: 30px;
+}
